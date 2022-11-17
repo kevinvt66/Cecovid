@@ -128,7 +128,14 @@ body{
 /***site main***/
 .div-main{
     background-color: var(--paleta-claro);
+    display:flex;
+
 }
+.div-main>*{
+    width:15%;
+}
+.cont2-main{
+    width:70%;
 .site-sections{
     width: 70%;
     margin: auto;
