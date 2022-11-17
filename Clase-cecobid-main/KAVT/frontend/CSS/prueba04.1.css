@@ -1,0 +1,132 @@
+/***Estilo global***/
+*{padding:0;margin: 0;}
+body{
+    font-family: var(--font-basic,'Raleway', sans-serif);
+    
+}
+/***Estilo específico***/
+
+/*nav-menu1*/
+.div-menu-nav1{
+    background-color:black;
+}
+.menu-nav1{
+    list-style: none;
+    color:white;
+    letter-spacing: 0.1em;
+}
+.menu-nav1 a{color:white;text-decoration: none;}
+.menu-nav1 a:hover{color:lightgray}
+/*nav menu 2*/
+.menu-nav2{
+    font-weight:900;
+}
+.menu-nav2 a{color:black;text-decoration: none;}
+.menu-nav2 a:hover{color:gray;text-decoration: underline;text-decoration-color: orange;text-underline-offset: 15px;}
+/*btn nav*/
+
+/***Codigo Específico***/
+
+/**Header**/
+/*nav menu 1*/
+.menu-nav1{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.7em 10px;
+    width: 95%;
+    margin: auto;
+}
+.menu-nav1>li>ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+/**Div menu nav 2**/
+.div-menu-nav2{
+    border-bottom: 0.5px solid lightgray;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*nav menu 2!*/
+.menu-nav2{width: 95%;}
+.menu-nav2 ul{
+    padding:0 15px;
+    border-right: 0.5px solid lightgray;
+    border: 1px solid red;
+}
+.menu-nav2 ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu-nav2>ul>li>ul{
+    justify-content: center;
+    gap: 2em;
+    font-size: 1.5em;
+}
+.menu-nav2>ul>li:nth-child(1){
+    width: 25%;
+}
+.menu-nav2>ul>li:nth-child(even){
+    width: 50%;
+}
+.menu-nav2>ul>li:nth-child(3){
+    width: 25%;
+    text-align: end;
+}
+/*btn*/
+.div-nav-btn{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-btn{
+    border: 1px solid red;
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+.btnOn>span{
+    opacity: 0;
+}
+.btnOn::after{
+    top: 50% !important;
+    transform: rotate(45deg);
+}
+.btnOn::before{
+    top: 50% !important;
+    transform: rotate(-45deg);
+}
+
+.nav-btn>span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position:absolute;
+    top: 46.25%;
+    transition: 0.5s;
+}
+    
+.nav-btn::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    top:10%;
+    position: absolute;  
+    transition: top 0.5s, transform 1s;
+
+}
+.nav-btn::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    bottom:10%;
+    position: absolute;
+    transition:top 0.5s, transform 1s;
+
+}

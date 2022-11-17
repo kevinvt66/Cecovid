@@ -1,0 +1,8 @@
+section img{
+    width: 29%;
+    display: block;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
