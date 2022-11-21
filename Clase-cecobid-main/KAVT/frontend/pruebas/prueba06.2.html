@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fecha y hora en JS</title>
+    <link rel="stylesheet" href="CSS/prueba06.2.css">
+</head>
+<body>
+    <h1>Fecha y hora en JS</h1>
+    <h2>El objeto fecha Date()</h2>
+    <p>Nos permite trabajar con las fechas:</p>
+    <p id="testDate"></p>
+    <p>El objeto Date() es estático. No es un reloj como tal, es un objeto cuya propiedades se generan cuando el navegador carga el documento.</p>
+    <h2>Creando Objetos Fecha</h2>
+    <p>Los objetos fecha se cran con <code>new Date()</code>.</p>
+    <p>Hay distintas maneras de crear uno. Si no le indicamos párametro, el objeto se genera con la fecha y hora actuales.</p>
+    <code>
+        <ul>
+            <li>new Date()</li>
+            <li>new Date('string de fecha')</li>
+            <li>new DAte('año,mes,dia,horas,minutos,segundos,ms')</li>
+            <li>new Date('milisegundos')</li>
+        </ul>
+    </code>
+    <h3>new Date('string de fecha') </h3>
+    <p>
+        Crear un objeto a partir de una fecha concreta. En este caso sera e 7 de febrero del 99. ref al js linea 4
+    </p>
+    <p id="dateString"></p>
+    <h3>new Date('año, mes, ...')</h3>
+    <p>La fecha se crea introduciendo números. Esto genera ciertas situaciones especiales. Ref en linea 8.</p>
+    <p id="dateNumber"></p>
+    <p>
+        <b>Nota:</b> JS cuenta los meses de 0-11. Si se introduce un mes mayor que 11, Js seguira contando los meses del siguiemte año.
+    </p>
+    <h3>new Date('milisegundos')</h3>
+    <p>JS almacena las fechas como el número de ms que ha transcurrido desde el 1 de enero de 1970.</p>
+    <p><b>El tiempo cero(Zero time)</b>
+     es el 1 de enero de 1970, 00:00:00 GTH 0</p>
+    <p>Ahora el tiempo/fecha es: <b><span id="fechaMS"></span></b> milisegundos transcurridos desde el tiempo cero.</p>
+    <p>04 de julio 1965 desde el tiempo cero es: <b><span id="fechaMS2"></span></b>
+    </p>
+    <h3>Imprimir fechas</h3>
+    <p>
+        Escribir <code>new Date()</code> convertira la fecha automáticamente a un string.
+    </p>
+    <p>
+        un formato más facil de leer se obtiene al usar el método <code>toDateString()</code>. Ref al js linea 16.
+    </p>
+    <p id="fechaDateString"></p>
+    <h2>Tomar datos de fecha (Get Methods)</h2>
+    <ul>
+        <li>getFullYear() - Retorno el año como un número de 4 digitos YYYY</li>
+        <li>getMonth - Retorna e mes como número 0-11</li>
+        <li>getDate() - Retorna el día de mes como número 1-31 </li>
+        <li>getDay() - Retorna el dia de la semana como número 0-6</li>
+        <li>getHours() - 0-24</li>
+        <li>getMinutes() - 0-59</li>
+        <li>getSeconds() - 0-59</li>
+        <li>getAllSecnds() - 0-999</li>
+        <li>getTime() - Retorna el tiempo o los ms desde el tiempo cero</li>
+    </ul>
+    <p>Ref al js linea 18</p>
+    <p id="fechaGet"></p>
+</body>
+<script src="Js/prueba06.2.js"></script>
+</html>
