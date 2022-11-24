@@ -5,7 +5,7 @@ body{
 }
 .container{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 25% 25% 25% 25%;
     width: 75%;
     margin: auto;
     box-shadow: 
@@ -13,6 +13,7 @@ body{
         0 0 25px #7f00b2,
         0 0 50px #7f00b2,
         0 0 100px #7f00b2;
+    padding-bottom: 50%;
 }
 .container>div>h2{
     height: 3em;
@@ -30,4 +31,4 @@ h1{
     text-align: center;
     padding: 50px;
 }
-a{color: white;font-family: sans-serif;}
+a{color: white;font-family: sans-serif;text-decoration: none;}
