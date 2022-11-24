@@ -181,6 +181,8 @@ body{
 .cont2-main{
     background-color: var(--paleta-muy-oscuro);
     order: 1;
+    padding: 25px;
+    
 }
 .cont3-main div{
     margin: 15px 15%;
