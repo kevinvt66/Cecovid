@@ -1,1 +1,33 @@
 *{padding: 0;margin: 0;box-sizing: border-box;list-style: none;letter-spacing: 0.2em;}img,video{width: 100%;height: 100%;}html{scroll-behavior: smooth;}iframe{border: 0;}@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body{
+    background-color: rgba(52, 8, 81, 0.945);
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 75%;
+    margin: auto;
+    box-shadow: 
+    0 0 5px #7f00b2,
+        0 0 25px #7f00b2,
+        0 0 50px #7f00b2,
+        0 0 100px #7f00b2;
+}
+.container>div>h2{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.container>div>img{
+    height: auto;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+}
+a{color: white;font-family: sans-serif;}
