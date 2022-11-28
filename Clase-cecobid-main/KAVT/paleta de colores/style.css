@@ -6,10 +6,12 @@ body{
 .container{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
     width: 75%;
+    height: 122.5vh;
     margin: auto;
     box-shadow: 
-    0 0 5px #7f00b2,
+        0 0 5px #7f00b2,
         0 0 25px #7f00b2,
         0 0 50px #7f00b2,
         0 0 100px #7f00b2;
@@ -26,6 +28,7 @@ body{
 }
 .container>div>img{
     height: auto;
+    object-fit: cover;
 }
 h1{
     text-align: center;
